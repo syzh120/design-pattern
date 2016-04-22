@@ -8,6 +8,6 @@ public class Coke extends ColdDrink {
 
 	@Override
 	public float price() {
-		return 2.0f;
+		return 2.7f;
 	}
 }

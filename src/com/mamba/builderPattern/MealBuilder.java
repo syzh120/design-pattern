@@ -10,7 +10,7 @@ public class MealBuilder {
 
 	public Meal prepareNoVegMeal() {
 		Meal meal = new Meal();
-		meal.addItem(new ChicknBurger());
+		meal.addItem(new ChickenBurger());
 		meal.addItem(new Pepsi());
 		return meal;
 	}

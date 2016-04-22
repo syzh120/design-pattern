@@ -1,6 +1,6 @@
 package com.mamba.builderPattern;
 
-public class ChicknBurger extends Burger {
+public class ChickenBurger extends Burger {
 	@Override
 	public String name() {
 		return "Chick Burger";
