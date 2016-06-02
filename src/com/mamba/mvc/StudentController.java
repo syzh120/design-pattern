@@ -1,32 +1,32 @@
 package com.mamba.mvc;
 
 public class StudentController {
-	private Student model;
-	private StudentView view;
+	private Student stuModel;
+	private StudentView stuView;
 
-	public StudentController(Student model, StudentView view) {
-		this.model = model;
-		this.view = view;
+	public StudentController(Student stuModel, StudentView stuView) {
+		this.stuModel = stuModel;
+		this.stuView = stuView;
 	}
 
 	public void setStudentName(String name) {
-		model.setName(name);
+		stuModel.setName(name);
 	}
 
 	public String getStudentName() {
-		return model.getName();
+		return stuModel.getName();
 	}
 
 	public void setStudentRollNo(String rollNo) {
-		model.setRollNo(rollNo);
+		stuModel.setRollNo(rollNo);
 	}
 
 	public String getStudentRollNo() {
-		return model.getRollNo();
+		return stuModel.getRollNo();
 	}
 
 	public void updateView() {
-		view.printStudentDetails(model.getName(), model.getRollNo());
+		stuView.printStudentDetails(stuModel.getName(), stuModel.getRollNo());
 	}
 
 }
